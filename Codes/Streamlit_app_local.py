@@ -5,7 +5,7 @@ This script creates a Streamlit-based web application for classifying email text
 It integrates machine learning models, visualizations, and dataset exploration functionalities in an 
 interactive and user-friendly interface.
 
-This script is used for the deployed app on Streamlit.
+This script is used to launch the app on Streamlit locally (for local testing).
 
 Features:
 ---------
@@ -75,10 +75,8 @@ from PIL import Image
 st.set_page_config(page_title="Spam Classification")
 
 # Load the model and vectorizer from file
-model_path = (
-    "Email_Spam_Classification/Codes/Models/Logistic Regression_Text_Best_Model.pkl"
-)
-vectorizer_path = "Email_Spam_Classification/Codes/Models/tfidf_vectorizer.pkl"
+model_path = "Models/Logistic Regression_Text_Best_Model.pkl"
+vectorizer_path = "Models/tfidf_vectorizer.pkl"
 
 # Load the Logistic Regression model
 with open(model_path, "rb") as model_file:
@@ -124,7 +122,7 @@ def project_description():
 
 # Define a function for dataset visualization
 def dataset_visualization():
-    dataset_dir = "Email_Spam_Classification/Codes/Plots/Dataset"
+    dataset_dir = "Plots/Dataset"
     st.subheader("Dataset Visualizations")
 
     # Traverse the dataset directory and display all images
@@ -170,7 +168,7 @@ def model_evaluation():
 
 # Define a function for model visualization
 def model_visualization():
-    model_dir = "Email_Spam_Classification/Codes/Plots/Models/Text"
+    model_dir = "Plots/Models/Text"
     st.subheader("Model Visualizations")
 
     # Traverse the model directory and display all images
