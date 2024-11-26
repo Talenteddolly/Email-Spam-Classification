@@ -50,6 +50,8 @@ Logistic Regression is a binary classifier that predicts the probability of a pa
 
 ### Deployed App
 
+<br>
+
 ![Screenshot 2024-11-26 223746](https://github.com/user-attachments/assets/d398355f-1cd1-4e90-a1cd-7009f72096d1)
 
 ![Screenshot 2024-11-26 223803](https://github.com/user-attachments/assets/f828adb0-36ec-430f-9082-faac1dfca888)
